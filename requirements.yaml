@@ -1,0 +1,27 @@
+# requirements.yaml
+name: diagram-rag-chatbot-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip=23.1.2
+  - pip:
+    # FastAPI and server dependencies
+    - fastapi==0.115.12
+    - uvicorn==0.34.0
+    - pydantic==2.11.1
+    - email_validator==2.2.0
+    - python-multipart==0.0.20
+    - python-dotenv==1.1.0
+    
+    # Authentication
+    - PyJWT==2.10.1
+    
+    # Database
+    - supabase==2.15.0
+    
+    # AI and ML
+    - google-generativeai==0.8.4
+    - sentence-transformers==4.0.1
+    - numpy==2.0.2
